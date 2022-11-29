@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Les Films de Plein Air</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-border-bottom" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#accueil" class="w3-bar-item w3-button changeaccueil">Accueil</a>
+    <a href="#actu" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-newspaper-o"></i></i> Actualités</a>
+    <a href="#films" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-film"></i> Les Films</a>
+    <a href="#register" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-pencil"></i> Inscription</a>
+  </div>
+
+  <!-- Navbar mobile -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#actu" class="w3-bar-item w3-button" onclick="toggleFunction()">Actualités</a>
+    <a href="#films" class="w3-bar-item w3-button" onclick="toggleFunction()">Les Films</a>
+    <a href="#register" class="w3-bar-item w3-button" onclick="toggleFunction()">Inscription</a>
+  </div>
+</div>
+
+<!-- Image Bannière -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="accueil">
+  <div class="w3-display-middle">
+    <h1>Les Films de Plein air</h1>
+  </div>
+</div>
+
+<!-- Présentation -->
+<div class="w3-content w3-container w3-padding-32 presentation">
+  <p class="w3-center accroche"><span class="engras">Les Films de Plein Air</span> vous propose des films au coeur du parc Monceau, à Paris.<br>
+  Du 5 au 8 août, découvrez de formidables films d'auteur, chaque soir de 18 heures à minuit.<br>
+  <span class="engras">Entrée gratuite et ouverte à tous</span></p>
+  <img class="logo w3-opacity-min" src="./img/Logo.svg" alt="">
+</div>
+
+<!-- Actualités -->
+<div class="w3-content w3-container w3-padding-32" id="actu">
+  <h3 class="w3-center w3-margin-bottom">ACTUALITES</h3>
+  <div class="w3-row w3-container">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <img src="./img/img2.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Actu numero 1" width="500" height="333">
+    </div>
+    <div class="text-article w3-container w3-col m6">
+      <p>Ceci est une première actualité du festival. Elle vous permet de visualiser le rendu d'un article. Pour accéder à l'article, il faudra cliquer dessus.</p>
+    </div>
+  </div>
+  <div class="w3-row w3-container">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <img src="./img/img3.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Actu numero 1" width="500" height="333">
+    </div>
+    <div class="text-article w3-container w3-col m6">
+      <p>Ceci est une seconde actualité du festival. Elle vous permet de visualiser le rendu d'un article. Pour accéder à l'article, il faudra cliquer dessus.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Bandeau récapitulatif -->
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-third w3-section">
+    <span class="w3-xlarge">8 films</span><br>
+    sélectionnés
+  </div>
+  <div class="w3-third w3-section">
+    <span class="w3-xlarge">24h</span><br>
+    de grand cinéma en plein air
+  </div>
+  <div class="w3-third w3-section">
+    <span class="w3-xlarge">100%</span><br>
+    Gratuit et acessible à tous
+  </div>
+</div>
+
+<!-- Les Films -->
+<div class="w3-content w3-container w3-padding-32" id="films">
+  <h3 class="w3-center">LES FILMS</h3>
+  <p class="w3-center"><em>Les oeuvres sélectionnées pour cette édition 2023</em></p>
+
+  <div class="w3-row-padding w3-padding-16 w3-center cineCont">
+    <div class="w3-quarter cine">
+      <img src="./img/cine1.jpg" style="width:100%; padding-bottom: 1.5rem;" onclick="onClick(this)" class="w3-hover-opacity" alt="La vie est belle - 1er soir">
+    </div>
+
+    <div class="w3-quarter cine">
+      <img src="./img/cine2.png" style="width:100%; padding-bottom: 1.5rem;" onclick="onClick(this)" class="w3-hover-opacity" alt="La fureur de vivre - 2e soir">
+    </div>
+
+    <div class="w3-quarter cine">
+      <img src="./img/cine3.jpg" style="width:100%; padding-bottom: 1.5rem;" onclick="onClick(this)" class="w3-hover-opacity" alt="Le silence des agneaux - 3e soir">
+    </div>
+
+    <div class="w3-quarter cine">
+      <img src="./img/cine4.jpg" style="width:100%; padding-bottom: 1.5rem;" onclick="onClick(this)" class="w3-hover-opacity" alt="Chantons sous la pluie - 4e soir">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-quarter cine">
+      <img src="./img/cine5.jpg" style="width:100%; padding-bottom: 1.5rem;" onclick="onClick(this)" class="w3-hover-opacity" alt="Elephant man - 1er soir">
+    </div>
+
+    <div class="w3-quarter cine">
+      <img src="./img/cine6.jpg" style="width:100%; padding-bottom: 1.5rem;" onclick="onClick(this)" class="w3-hover-opacity" alt="Eraserhead - 2e soir">
+    </div>
+
+    <div class="w3-quarter cine">
+      <img src="./img/cine7.jpg" style="width:100%; padding-bottom: 1.5rem;" onclick="onClick(this)" class="w3-hover-opacity" alt="Mulholland Drive - 3e soir">
+    </div>
+
+    <div class="w3-quarter cine">
+      <img src="./img/cine8.jpg" style="width:100%; padding-bottom: 1.5rem;" onclick="onClick(this)" class="w3-hover-opacity" alt="LostHiway - 4e soir">
+    </div>
+  </div>
+</div>
+
+<!-- Au clic = grande image -->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Inscription -->
+<div class="w3-content w3-container w3-padding-32" id="register">
+  <h3 class="w3-center">INSCRIPTION</h3>
+  <p class="w3-center"><em>Pour organiser le festival dans les meilleures conditions, veuillez-vous inscrire via notre formulaire. C'est 100% gratuit et sans publicités !</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Nom" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+          <fieldset>
+            <legend>Je souhaite venir :</legend>
+            <div>
+              <input type="radio" id="soir1" name="drone" value="soir1"
+                     checked>
+              <label for="soir1">Soirée du 5 Août</label>
+            </div>
+            <div>
+              <input type="radio" id="soir2" name="drone" value="soir2">
+              <label for="soir2">Soirée du 6 Août</label>
+            </div>
+            <div>
+              <input type="radio" id="soir3" name="drone" value="soir3">
+              <label for="soir3">Soirée du 7 Août</label>
+            </div>
+            <div>
+              <input type="radio" id="soir4" name="drone" value="soir4">
+              <label for="soir4">Soirée du 8 Août</label>
+            </div>
+        </fieldset>
+        </div>
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-check"></i> INSCRIPTION
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#accueil" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Revenir en haut de la page</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+  </div>
+</footer>
+ 
+<script>
+// Agrandir image au click
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Menu mobile
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+</body>
+</html>
